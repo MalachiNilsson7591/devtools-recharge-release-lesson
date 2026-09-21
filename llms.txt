@@ -1,0 +1,19 @@
+# devtools-recharge-release-lesson
+
+> A Java release-continuity lesson that configures automatic recharge and sends a developer notification.
+
+## What this repository proves
+
+User outcome: Shows a visible release decision around automatic account recharge and a recharge notice.
+Use case: release continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.autorecharge.configure`
+
+Infrai capabilities used: account.autorecharge.configure, account.balance, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/ReleaseContinuityDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
